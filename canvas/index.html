@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
   <head>
@@ -8,18 +8,34 @@
     <meta http-equiv="Content-Style-Type" content="text/css" />
     <meta http-equiv="Content-Script-Type" content="text/javascript" />
     <title>Canvas</title>
+    <link rel="stylesheet" href="css/default.css">
     <script type="text/javascript" src="js/excanvas.js"></script>
   </head>
   <body>
     <h1>Canvas</h1>
-    <h2>lineTo</h2>
-    <canvas id="canvassample" width="140" height="140"></canvas>
-    <h2>fillRect()</h2>
-    <canvas id="c1" width="140" height="140"></canvas>
-    <h2>strokeRect()</h2>
-    <canvas id="c2" width="140" height="140"></canvas>
-    <h2>clearRect()</h2>
-    <canvas id="c3" width="140" height="140"></canvas>
+    <div class="menu">
+    <label for="Panel1">lineTo [Click!]</label>
+    <input type="checkbox" id="Panel1" class="on-off" />
+    <ul>
+        <li><canvas id="canvassample" width="140" height="140"></canvas></li>
+    </ul>
+    <label for="Panel12">fillRect() [Click!]</label>
+    <input type="checkbox" id="Panel12" class="on-off" />
+    <ul>
+        <li><canvas id="c1" width="140" height="140"></canvas></li>
+    </ul>
+    <label for="Panel13">strokeRect() [Click!]</label>
+    <input type="checkbox" id="Panel13" class="on-off" />
+    <ul>
+        <li><canvas id="c2" width="140" height="140"></canvas></li>
+    </ul>
+    <label for="Panel14">clearRect() [Click!]</label>
+    <input type="checkbox" id="Panel14" class="on-off" />
+    <ul>
+        <li><canvas id="c3" width="140" height="140"></canvas></li>
+    </ul>
+    </div>
+
     <script>
     <!--
         onload = function() {
