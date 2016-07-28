@@ -1,0 +1,17 @@
+<app>
+  <!-- [A]「メニュー」を追加 -->
+  <app-menu items={ urls } />
+  <!-- [B]「ヒーローユニット」を追加 -->
+  <app-hero title="Riot tutorial !" />
+  <!-- [C]「関連リンク」を追加 -->
+  <app-links items={ urls } />
+  <app-footer message="Made in fk2000" />
+
+  <script>
+    this.urls = [
+      { title: 'GitHub',   url: 'https://github.com/fk2000' },
+      { title: 'Twitter',  url: 'https://twitter.com/fk_2000' },
+      { title: 'Facebook', url: 'https://www.facebook.com/fk2000' }
+    ]
+  </script>
+</app>
