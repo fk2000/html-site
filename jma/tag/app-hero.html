@@ -14,23 +14,4 @@
 
   <!-- [A]ここにh1タグを追加 -->
   <h1>{ opts.title }</h1>
-  <div>
-    <label for="Panel1">Menu[▼]</label>
-    <input type="checkbox" id="Panel1" class="on-off" />
-    <ul>
-        <li><canvas id="canvassample" width="140" height="140"></canvas></li>
-    </ul>
-  </div>
-  <script>
-  onload = function() {
-    draw();
-  };
-  function draw() {
-    var canvas = document.getElementById('canvassample');
-    if ( ! canvas || ! canvas.getContext ) { return false; }
-    var ctx = canvas.getContext('2d');
-    ctx.beginPath();
-    ctx.fillRect(20, 20, 80, 40);
-  }
-  </script>
 </app-hero>
