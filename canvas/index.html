@@ -7,38 +7,34 @@
     <meta http-equiv="Content-Language" content="ja" />
     <meta http-equiv="Content-Style-Type" content="text/css" />
     <meta http-equiv="Content-Script-Type" content="text/javascript" />
-    <title>Canvas</title>
+    <title>作戦ボード（仮名）</title>
     <link rel="stylesheet" href="css/default.css">
     <script type="text/javascript" src="js/excanvas.js"></script>
   </head>
   <body>
-    <h1>Canvas</h1>
-    <div class="menu">
-    <label for="Panel1">lineTo [Click!]</label>
-    <input type="checkbox" id="Panel1" class="on-off" />
-    <ul>
-        <li><canvas id="canvassample" width="140" height="140"></canvas></li>
-    </ul>
-    <label for="Panel12">fillRect() [Click!]</label>
-    <input type="checkbox" id="Panel12" class="on-off" />
-    <ul>
-        <li><canvas id="c1" width="140" height="140"></canvas></li>
-    </ul>
-    <label for="Panel13">strokeRect() [Click!]</label>
-    <input type="checkbox" id="Panel13" class="on-off" />
-    <ul>
-        <li><canvas id="c2" width="140" height="140"></canvas></li>
-    </ul>
-    <label for="Panel14">clearRect() [Click!]</label>
-    <input type="checkbox" id="Panel14" class="on-off" />
-    <ul>
-        <li><canvas id="c3" width="140" height="140"></canvas></li>
-    </ul>
+    <div class="container">
+      <h1>作戦ボード（仮名）</h1>
+      <div class="menu">
+      <label for="Panel1">作戦ボード</label>
+      <input type="checkbox" id="Panel1" class="on-off" checked="checked" />
+      <ul>
+          <li><canvas id="canvassample" width="800" height="400"></canvas></li>
+      </ul>
+      <label for="Panel12">オプション [Click!]</label>
+      <input type="checkbox" id="Panel12" class="on-off" />
+      <ul>
+          <li><canvas id="c1" width="140" height="140"></canvas></li>
+      </ul>
+      <footer class="footer">
+        <p>&copy; fk2000 2016</p>
+      </footer>
+      </div>
     </div>
-
     <script>
     <!--
         onload = function() {
+//          $( '#canvassample' ).get( 0 ).width = $( window ).width();
+//          $( '#canvassample' ).get( 0 ).height = $( window ).height();
           draw();
           draw1();
           draw2();
@@ -51,16 +47,12 @@
           if ( ! canvas || ! canvas.getContext ) {
             return false;
           }
+
           /* 2Dコンテキスト */
           var ctx = canvas.getContext('2d');
           /* 四角を描く */
           ctx.beginPath();
-          ctx.moveTo(20, 20);
-          ctx.lineTo(120, 20);
-          ctx.lineTo(120, 120);
-          ctx.lineTo(20, 120);
-          ctx.closePath();
-          ctx.stroke();
+          ctx.strokeRect(20, 20, 80, 40);
         }
         /* fillRect()の例 */
         function draw1() {
