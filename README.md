@@ -1,6 +1,7 @@
 # html-site
 
 [![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://fk2000.github.io/html-site/)
+[![wercker status](https://app.wercker.com/status/c8ace35b47bfe55812a369ac960a6ab0/s/master "wercker status")](https://app.wercker.com/project/byKey/c8ace35b47bfe55812a369ac960a6ab0)
 
 ## Description
 
