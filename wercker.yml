@@ -38,5 +38,4 @@ deploy:
         packages: git ssh-client
     - lukevivier/gh-pages@0.2.1:
         token: $GH_TOKEN
-        repo: fk2000/fk2000.github.io/html-site
-        basedir: public
+        repo: git@github.com/fk2000/html-site.git
