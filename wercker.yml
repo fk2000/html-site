@@ -39,3 +39,4 @@ deploy:
     - lukevivier/gh-pages@0.2.1:
         token: $GH_TOKEN
         repo: fk2000/html-site
+        branch: master
