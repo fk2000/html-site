@@ -32,3 +32,11 @@ build:
         channel: times_fujiken
         username: wercker
 
+deploy:
+  steps:
+    - git-push:
+         gh_oauth: $GH_TOKEN
+         gh_pages: true
+         gh_pages_domain: fk2000.github.io/html-site
+         basedir: build
+
