@@ -34,9 +34,9 @@ build:
 
 deploy:
   steps:
-    - deploy:
-         gh_oauth: $GH_TOKEN
-         gh_pages: true
-         gh_pages_domain: fk2000.github.io/html-site
-         basedir: build
+    - lukevivier/gh-pages@0.2.1
+        gh_oauth: $GH_TOKEN
+        gh_pages: true
+        gh_pages_domain: fk2000.github.io/html-site
+        basedir: build
 
