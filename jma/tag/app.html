@@ -1,0 +1,18 @@
+<app>
+  <!-- [A]「メニュー」を追加 -->
+  <app-menu items={ urls } />
+  <!-- [B]「ヒーローユニット」を追加 -->
+  <app-hero title="jma prototype !" />
+  <app-option title="jma option !" />
+  <!-- [C]「関連リンク」を追加 -->
+  <app-links items={ urls } />
+  <app-footer message="Powered by fk2000" />
+
+  <script>
+    this.urls = [
+      { title: '公式',   url: 'http://japan-ma.com/' },
+      { title: 'Twitter',  url: 'https://twitter.com/jpan_mizufusen' },
+      { title: 'Facebook', url: 'http://www.facebook.com/Japan.Mizufusen.Association' }
+    ]
+    </script>
+</app>

@@ -1,0 +1,11 @@
+<app-links>
+  <style scoped>
+    :scope {
+      display: block;
+      padding: 2em 0;
+    }
+  </style>
+
+  <!-- [A]以下3行を、each属性と、opts.itemsを使って書き換え -->
+  <ring each={ opts.items } title={ title } url={ url } />
+</app-links>
