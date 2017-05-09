@@ -37,4 +37,4 @@ deploy:
     - lukevivier/gh-pages@0.2.1:
         token: $GH_TOKEN
         basedir: public
-
+        repo: git@github.com:fk2000/html-site.git
